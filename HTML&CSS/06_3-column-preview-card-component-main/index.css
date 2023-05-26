@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+.asdf{
+    color:  hsl(31, 77%, 52%);
+    color:  hsl(184, 100%, 22%);
+    color:  hsl(179, 100%, 13%);
+    color:  hsla(0, 0%, 100%, 0.75);
+    color:  hsl(0, 0%, 95%);
+}
+
+body{
+    width: 100%;
+    height: 100%;
+
+    background-color: hsla(0, 0%, 100%, 0.75);;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9375em;
+    font-weight: 400;
+    color:  hsl(0, 0%, 95%);
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+}
+
+.card{
+    padding: 3em;
+}
+
+.card__color__sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.card__color__suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card__color__luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.card__title{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+
+.card__button{
+    background-color: hsl(0, 0%, 95%);
+    width: 125px;
+    padding: 1em;
+    border-radius: 2em;
+    border: none;
+    margin-top: 1em;
+    border: solid 2px transparent;
+}
+
+.button__color__text__sedans{
+    color: hsl(31, 77%, 52%);
+}
+
+.button__color__text__suvs{
+    color: hsl(184, 100%, 22%);
+}
+
+.button__color__text__luxury{
+    color: hsl(179, 100%, 13%);
+}
+
+.card__button:active{
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border: solid 2px hsl(0, 0%, 95%);
+}
+
+@media only screen and (min-width: 1024px){
+    body{  
+        position: absolute;
+        bottom: 0;
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        flex-direction: row;
+    }
+    .card{
+        max-width: 230px;
+    }
+    .card__color__sedans{
+        border-top-right-radius: 0;
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+    }
+    
+    .card__color__luxury{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
+    }
+}

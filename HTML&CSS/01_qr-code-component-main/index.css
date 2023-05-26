@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap');
+
+body{
+    margin: 0;
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.content-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.content-container, .qr-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-card{
+    flex-direction: column;  
+    width: 343px;
+    background-color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.qr-image, .qr-text{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.qr-image img{
+    width: 100%;
+}
+
+.qr-card, .qr-image img{
+    border-radius: 1em;
+}
+
+.qr-text{
+    text-align: center;
+}
+
+.qr-text :first-child{
+    color: hsl(218, 44%, 22%);
+    font-size: 1.6em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.qr-text p{
+    color: hsl(220, 15%, 55%);
+    font-weight: 400;
+    margin: 0.5em
+}

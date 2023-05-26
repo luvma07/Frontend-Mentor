@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap');
+
+body, .content__container{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.content__container, .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content__container{
+    background-color: hsl(212, 45%, 89%);
+}
+
+.card{
+    background-color: white;
+    width: 343px;
+    border-radius: 1.5em;
+}
+
+.card__image{
+    width: 100%;
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+}
+
+.card__title{
+    font-size: 1.5em;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.card__text{
+    text-align: center;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+    color: hsl(220, 15%, 55%)
+}
+
+.card__plan{
+    margin: 1.5em;
+    width: 85%;
+    border-radius: 1.5em;
+    background-color: hsl(225, 100%, 98%);
+    color: hsl(223, 47%, 23%);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card__plan__image, .card__plan__info, .plan__change{
+    display:flex;
+    align-self: center;    
+}
+
+.card__plan__image{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: end;
+    width: 3.5em;
+}
+
+.card__plan__info{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    justify-self: start;
+    flex-direction: column;
+    padding-left: 1em;
+}
+
+.plan__name, .plan__change, .botton__pay{
+    font-weight: 700;
+}
+
+.plan__detail{
+    color: hsl(220, 15%, 55%)
+}
+
+.plan__change{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    justify-self: start;
+}
+
+.plan__change:active{
+    color: #716DF2;
+}
+
+.botton__pay{
+    width: 85%;
+    height: 3.5em;
+    border-radius: 1em;
+    background-color: hsl(245, 75%, 52%);
+    font-size: 1em;
+    color: white;
+    border: none;
+    box-shadow: 0.5em 0.5em 1.5em hsl(224, 23%, 80%);
+}
+
+.botton__pay:active{
+    background-color: #716DF2;
+}
+
+.cancel__pay, .cancel__pay:visited{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-decoration: none;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+}
+
+.cancel__pay:active{
+    color: black;
+}

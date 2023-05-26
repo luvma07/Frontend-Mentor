@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+.asdf{
+    background-color: hsl(215, 51%, 70%);
+    background-color:  hsl(178, 100%, 50%);
+    background-color:  hsl(217, 54%, 11%);
+    background-color:  hsl(216, 50%, 16%);
+    background-color:  hsl(215, 32%, 27%);
+    background-color:  hsl(0, 0%, 100%);
+}
+
+body, .content__container{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+
+    background-color:  hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 343px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 2em;
+    border-radius: 1.5em;
+}
+
+.card__image{
+    background-color: aqua;
+    position: relative;
+    border-radius: 1em;
+}
+
+.card__image::after{
+    display: none;
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    content: '';
+    background-color: hsla(178, 100%, 50%, 25%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    border-radius: 1em;
+}
+
+.card__image:hover::after{
+    display: block;
+    cursor: pointer;    
+}
+
+.card__image img{
+    width: 100%;
+    border-radius: 1em;
+    display: block;
+}
+
+.card__title{
+    color: white;
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
+.card__title:hover{
+    cursor: pointer;
+    color:  hsl(178, 100%, 50%);
+}
+
+.card__text{
+    font-size: 1.25em;
+}
+
+.price, .date{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.price img{
+    width: 1em;
+}
+
+.date img{
+    width: 1.5em;
+}
+
+.price p{
+    font-weight: 600;
+    font-size: 1.2em;
+    color: hsl(178, 100%, 50%);
+    margin: 0;
+}
+
+.date p{
+    font-weight: 400;
+    margin: 0;
+}
+
+.data{
+    display: flex;
+    justify-content: space-between;
+}
+
+hr{
+    color: hsl(215, 51%, 30%);
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.creaded{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.creaded img{
+    width: 3em;
+    border: solid 1px white;
+    border-radius: 1.5em;
+}
+
+.creaded p{
+    font-size: 1.15em;    
+}
+
+.creaded p span{
+    color: white;
+}
+
+.creaded p span:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}

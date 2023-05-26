@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+.asdff{
+    color:  hsl(179, 62%, 43%);
+    color:  hsl(71, 73%, 54%);
+    color:  hsl(204, 43%, 93%);
+    color:  hsl(218, 22%, 67%);
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    /*position: absolute;
+    bottom: 0;*/
+
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(218, 22%, 67%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+h2{
+    margin-top: 0;
+}
+
+.content__container{
+    width: 343px;
+}
+
+.content__1{
+    background-color: hsl(204, 43%, 93%);
+}
+
+.content__1 h2{
+    color: hsl(179, 62%, 43%);
+}
+
+.content__1 p{
+    color:  hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+
+.content__1 :last-child{
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+}
+
+.content__2{
+    color: hsl(204, 43%, 93%);
+    background-color: hsl(179, 62%, 43%);
+}
+
+.content__2 p{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+}
+
+.content__2 button{
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    color: hsl(204, 43%, 93%);
+    font-size: 1.2em;
+    padding: 0.8em;
+    width: 100%;
+    border-radius: 0.5em;
+    margin-top: 0.8em;
+}
+
+.content__2 button:hover{
+    background-color: hsl(71, 73%, 64%);
+}
+
+.content__2 button:active{
+    background-color: hsl(71, 73%, 44%);
+}
+
+.content__2 p :first-child{
+    font-size: 2.5em;
+}
+
+.content__3{
+    color: hsl(204, 43%, 93%);
+    background-color: hsl(179, 62%, 46%);
+}
+
+.content__1, .content__2, .content__3{
+    padding: 2em;
+}
+
+@media only screen and (min-width: 720px){
+    body{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+
+        padding: 0;
+    }
+    .content__container{
+        min-width: 686px;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 50% 50%;
+    }
+    .content__1{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .content__2{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .content__3{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+}
